@@ -1,3 +1,9 @@
+## EDIT
+
+This fork demonstrates that Gradle "implementat/api" feature is properly supported with Gradle version >= 5.0.
+
+See Main class in subproject  "consumer".
+
 
 ## gradle "implementation" doesn't work
 
