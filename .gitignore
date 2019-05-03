@@ -1,8 +1,6 @@
-gradlew
-gradlew.bat
+
 .gradle
-gradle/wrapper/gradle-wrapper.jar
-gradle/
+
 # builds
 out/
 /build/
