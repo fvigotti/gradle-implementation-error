@@ -20,3 +20,9 @@ import org.apache.commons.codec.Decoder
 but why if it's an implementation ? 
  
 
+someone suggest using shadowJar or fatJar to hide implementations but using those everything is hidden ( also api libraries )  
+
+and using : `from components.java` everything is leaked ..
+
+
+
