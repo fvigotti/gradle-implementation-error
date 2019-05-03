@@ -5,6 +5,12 @@ This fork demonstrates that Gradle "implementat/api" feature is properly support
 See Main class in subproject  "consumer".
 
 
+## EDIT 2 : 
+
+see branche /gradle-4x  using Gradle v4.8 : the "Api and Implementation separation" is not enabled by default
+
+(see more information https://docs.gradle.org/current/userguide/java_library_plugin.html#sec:java_library_separation )
+
 ## gradle "implementation" doesn't work
 
 demonstration :

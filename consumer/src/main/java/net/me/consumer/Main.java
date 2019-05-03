@@ -9,12 +9,11 @@ public class Main {
         // transitive dependency commons-csv is visible , as expected
         CSVFormat format = CSVFormat.DEFAULT;
 
-        // commons-codec lib has not leaked, as expected:
+        // commons-codec lib has leaked:  available in compile & runtime scopes:
 
-        // cannot use Decoder class in compile scope
-        //org.apache.commons.codec.Decoder decoder;
+        org.apache.commons.codec.Decoder decoder;
 
-        // but available in runtime scope
+        //  available in runtime scope
         String decoderClazzName = "org.apache.commons.codec.Decoder";
         try{
             Class.forName(decoderClazzName);
