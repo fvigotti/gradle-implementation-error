@@ -2,7 +2,7 @@ package net.me.consumer;
 
 import org.apache.commons.csv.CSVFormat;
 
-public class Main {
+public class MainTest {
 
     public static void main(String[] args){
 

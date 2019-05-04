@@ -4,6 +4,7 @@
 # builds
 out/
 /build/
+gradle-wrapper.jar
 
 
 ### STS ###
