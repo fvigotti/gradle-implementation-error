@@ -11,6 +11,14 @@ see branche /gradle-4x  using Gradle v4.8 : the "Api and Implementation separati
 
 (see more information https://docs.gradle.org/current/userguide/java_library_plugin.html#sec:java_library_separation )
 
+
+## EDIT 3 :
+
+in consumer, the class on main works, the class on tests not , WHY?  
+ 
+ 
+
+
 ## gradle "implementation" doesn't work
 
 demonstration :
