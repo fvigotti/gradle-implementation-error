@@ -18,7 +18,11 @@ for "a should not be a problem because hidden transitive in upstream implementat
 
 to build the base library run :
 ```
-gradle publishToMavenLocal
+gradle :clean :build  publishToMavenLocal
+
+# then run
+gradle build 
+# to build everything but this will fail.. while intellij see no problems , will compile and run everything    
 ```
 
 then open the project in intellij ( tested both using wrapper and local gradle, which is 5.4.1 )  
