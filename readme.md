@@ -1,34 +1,14 @@
-## EDIT
+### this project doesn't compile in gradle,
+but works fine in intellij, transtitive dependencies should be out of classpath 
+instead is present and usable in test
 
-This fork demonstrates that Gradle "implementat/api" feature is properly supported with Gradle version >= 5.0.
+- src/test/java/net/me/consumer/Main.java
 
-See Main class in subproject  "consumer".
+and is present but not usable in main 
+- src/main/java/net/me/consumer/Main.java
 
+execute the class with intellij to spot the issue..   
 
-## gradle "implementation" doesn't work
-
-demonstration :
-
-run 
-`gradle  clean build  publishToMavenLocal`
-
-then on another empty project add to gradle :
-```
-implementation "net.me:library-sample:1.0-SNAPSHOT"
-```
-
-now on that empty project you can import and use the codec library
-ie :  
-```
-import org.apache.commons.codec.Decoder
-```
-
-but why if it's an implementation ? 
+this could create problems of conflicting dependencies while working, 
+for "a should not be a problem because hidden transitive in upstream implementations" dependencies  
  
-
-someone suggest using shadowJar or fatJar to hide implementations but using those everything is hidden ( also api libraries )  
-
-and using : `from components.java` everything is leaked ..
-
-
-
