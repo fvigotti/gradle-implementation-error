@@ -11,7 +11,7 @@ public class Main {
 
         // commons-codec lib has leaked:  available in compile & runtime scopes:
 
-        //org.apache.commons.codec.Decoder decoder;
+        org.apache.commons.codec.Decoder decoder;
 
         //  available in runtime scope
         String decoderClazzName = "org.apache.commons.codec.Decoder";
